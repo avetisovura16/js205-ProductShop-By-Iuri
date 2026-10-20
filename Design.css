@@ -2,6 +2,11 @@ body {
   background-color: #b8c8dc;
 }
 
+html, body {
+
+    scrollbar-width: none; 
+}
+
 #PageNumber {
   margin: 0;
   width: 50px;
