@@ -34,6 +34,11 @@ One or two sentences: what is this app, and who is it for?
 2. Open `index.html` with Live Server.
 
 ## Features
+Cart.
+Dark theme.
+Reviews.
+You can add your own product using FORM.
+
 
 
 ## API
