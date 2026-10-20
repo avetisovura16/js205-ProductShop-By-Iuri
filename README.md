@@ -14,16 +14,19 @@ To begin, click **Use this template → Create a new repository** at the top of 
 
 ---
 
-# Project name
+# LittleShop
 
 One or two sentences: what is this app, and who is it for?
 
-- **Project:** Recipe Book / Social Feed / Online Store / my own idea
-- **Live demo:** the link, if you published it with GitHub Pages
+- **Project:** Online Store
+
 
 ## Screenshots
 
-Put at least one screenshot here. Save the image in a `docs/` folder and show it like this: `![Home page](docs/home.png)`
+
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/ceb6990c-bff9-488e-9be5-55ea3dd79680" />
+
+<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/61c20edf-b8b3-49e8-b326-ca9120249173" />
 
 ## How to run
 
@@ -32,21 +35,22 @@ Put at least one screenshot here. Save the image in a `docs/` folder and show it
 
 ## Features
 
-- …
 
 ## API
 
-| Request | Used for |
-|---|---|
-| `GET https://dummyjson.com/recipes?limit=12&skip=0` | The list on the home page |
+- GET https://dummyjson.com/products?limit=12&skip=0 — catalog page.
+- GET https://dummyjson.com/products?limit=0 — all products (for sorting).
+- GET https://dummyjson.com/products/search?q=... — search.
+- GET https://dummyjson.com/products/{id} — product details.
+- POST https://dummyjson.com/products/add — add a product.
 
 ## Bonus tasks
 
-Which ones you did, and where to see them.
+Dark theme
 
 ## What I would improve
-
-Known problems, and what you would do with more time.
+- UI design ).
+- Better mobile layout.
 
 ## AI use
 
