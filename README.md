@@ -49,9 +49,8 @@ One or two sentences: what is this app, and who is it for?
 Dark theme
 
 ## What I would improve
-- UI design ).
+- UI design.
 - Better mobile layout.
 
 ## AI use
-
-One or two sentences: did you use AI, and for what? The details are in `AI_LOG.md`.
+I used ai only to find errors and fix it
