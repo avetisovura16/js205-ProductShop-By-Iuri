@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Shop</title>
+    <link rel="stylesheet" href="Design.css" />
+  </head>
+  <body>
+    <main>
+      <button id="statusMod">⏾</button>
+
+      <div class="superproducts">
+        <button id="cartButton">Your Cart</button>
+        <ul id="ourproducts"></ul>
+        <p id="pteg">nothing found :(</p>
+        <p id="loadText">LOADING...</p>
+
+        <div class="things">
+
+          <div>
+          <input id="searchInput" type="text" placeholder="search" />
+
+          <select id="sortOrder">
+            <option value="none">No Sorting</option>
+            <option value="asc">Price: Low to High</option>
+            <option value="desc">Price: High to Low</option>
+            <option value="rating">Rating</option>
+          </select>
+          </div>
+
+          <div id="pagination">
+            <button id="button_prev"><</button>
+            <p id="PageNumber">1</p>
+            <button id="button_next">></button>
+            <button id="comeback">Back to 1</button>
+          </div>
+
+          <button id="addProductButton">add your product</button>
+        </div>
+      </div>
+
+      <div class="details" style="display: none">
+        <div class="buttons">
+          <button id="goBackButton">comeback</button>
+        </div>
+
+        <div id="detailsOfProduct"></div>
+      </div>
+
+      <div class="cartSurface" style="display: none">
+        <button id="CartBackBtn">Come Back</button>
+        <h1>Your Cart :</h1>
+        <div class="divList">
+          <p id="emptyText">your cart is empty :(</p>
+          <ul id="UlProducts"></ul>
+        </div>
+        <p id="CartAmount">Amount: 0</p>
+        <p id="CartTotal">total :</p>
+      </div>
+
+      <div class="YourOwnProduct">
+        <button id="ProductBack">Come Back</button>
+        <h1>You can add your own products to the shop!</h1>
+
+        <form id="productForm">
+          <label for="name">Title:</label>
+          <input type="text" id="name" name="name" required minlength="2" />
+          <p id="nameError" class="field-error"></p>
+
+
+                    <label for="Fullname">Fullname:</label>
+          <input type="text" id="Fullname" name="Fullname" required minlength="2" />
+
+
+
+
+          <label for="price">Price:</label>
+          <input
+            type="number"
+            id="price"
+            name="price"
+            required
+            min="0.01"
+            step="0.01"
+          />
+          <p id="priceError" class="field-error"></p>
+
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <p id="emailError" class="field-error"></p>
+
+
+                    <label for="adress">Address:</label>
+          <input type="text" id="adress" name="adress" required />
+
+          <label for="description">Description:</label>
+          <input
+            type="text"
+            id="description"
+            name="description"
+            required
+            minlength="10"
+          />
+          <p id="descriptionError" class="field-error"></p>
+
+          <p id="formMessage" role="status"></p>
+
+          <button type="submit" id="addProductbtn">Add Product</button>
+        </form>
+      </div>
+
+      <script src="render.js"></script>
+      <script src="main.js"></script>
+    </main>
+  </body>
+</html>
